@@ -1,4 +1,4 @@
-/*font*/
+/*font-icomoon*/
 @font-face{
 	font-family: "icomoon";
 	src:url("../fonts/icomoon.eot") format("embedded-opentype")
@@ -11,7 +11,7 @@
 .logo1{
 	color: #939393;
 	font-family: "icomoon";
-	font-size: 24px;
+	font-size: 1.2rem;
 	padding: 12px;
 	background-color: #141414;
 	border-radius: 100%;
@@ -25,105 +25,135 @@
 .logo2{
 	color: #fff;
 	font-family: "icomoon";
-	font-size: 24px;
+	font-size: 1.9rem;
+	margin-right: 15px;
+	margin-top: 5px;
 }
+
+/*main*/
+
 body{ 
-	font: 14px/1.5 'Helvetica Neue',Arial,'Hiragino Sans GB',STHeiti,'STHeiti Light [STXihei]','Microsoft Yahei',sans-serif;
+	font:1.25rem/1.5 'Helvetica Neue',Arial,'Hiragino Sans GB',STHeiti,'STHeiti Light [STXihei]','Microsoft Yahei',sans-serif;
 	color:#fff;
 }
-/*main*/
 html,body,div{ margin:0;padding:0;}
-
-.warp-center{
-	width:1120px;
-	margin:0px auto;
-	padding:40px 0;
-	text-align: center; 
-}
-.box{
-	width: 1120px;
-	height: 450px;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 2px 4px rgba(0,0,0,.4);
-	min-height: 400px;
-}
-
-.card{
-	width: 560px;
-	height: 450px;
-	text-align: center;
-	float: left;
-}
-.card:hover{
-	box-shadow:0 0 38px rgba(0,0,0,.08) inset;
-	transition:all .15s ease
-}
-
-/*page1*/
-.header-warp{
-	height: 100%;
-	background:url(../images/mainbanner_content.png) no-repeat;
-	background-position: center bottom;
-}
-.header-title{
-	text-align: center;
-	padding-top: 30px;
-	margin: 0 100px;
-}
 h1,h2,h3,h4,p{
     font-weight: normal;
     margin:10px 0;
     padding:0;
 }
-h1{font-size: 36px;}
-h2{font-size: 24px;}
+a {text-decoration: none;}
+h1{font-size: 2.5rem;}
+.center { text-align: center; }
+.page { display: table; }
+.warp { display: table-cell;vertical-align: middle;width: 100%;height: 100%; }
+.box{
+	width: 80%;
+	height: 77%;
+	margin:0 auto; 
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.4);
+
+}
+.card { float: left; 	display: table;}
+.card .mid{display: table-cell;vertical-align: middle;}
+.card:hover{
+	box-shadow:0 0 38px rgba(0,0,0,.08) inset;
+	transition:all .15s ease;
+}
+.card-left-1{width: 60%; height: 100%;}
+.card-right-1{width: 40%; height: 100%;}
+.card-left-2{width: 40%; height: 100%;}
+.card-right-2{width: 60%; height: 100%;}
+.card-left-3{width: 30%; height: 100%;}
+.card-center-3{width: 40%; height: 100%;}
+.card-right-3{width: 30%; height: 100%;}
+/*page1*/
+/*.header-warp{
+	background:url(../images/mainbanner_content.png) no-repeat;
+	background-position: center bottom;
+}*/
+.myicon{
+    max-width: 150px;
+    max-height: 150px;
+    border: 3px solid #3A3A3A;
+    border-radius: 50%;
+}
 .hr1{ 
 	border: none;
 	width: 25%;
 	margin: 20px auto;
 	border-top: 1px solid rgba(255, 255, 255, 0.14); 
 }
-.myicon{
-    width: 100px;
-    height: 100px;
-    border: 3px solid #2A2A2A;
-    border-radius: 50%;
+
+.header-warp ul{ 
+	list-style: none; margin-top: 50px;
 }
-.banner{
-	margin: 0 100px;
-	text-align: center;
-}
-.banner ul{ 
-	list-style: none; margin: 0; padding:0;
-}
-.banner ul li{
+.header-warp ul li{
 	display: inline-block;
-	line-height: 100px;
 	text-decoration: none;
-	margin: 0 20px;
-}
-.banner ul li a {
-	text-decoration: none;
+	margin-right:20px; 
 }
 .tooltip-box {
-	width: 160px;
-    height: 160px;
+	width: 150px;
+    height: 150px;
 	text-align: center;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 2px 4px rgba(0,0,0,.4);
 }
-.tooltip-box p{
-	margin-top: 10px;
-	line-height: normal;
-}
-
 .tooltip-box img {
-    width: 100px;
-    height: 100px;
+	padding-top: 20px;
+    width: 110px;
+    height: 110px;
 }
-/*page2 page3*/
 
 
-/*page4 page5*/
+
+
+
+/*page2 关于我*/
+.page2 { color: #414141; }
+
+
+
+/*page3我的技能*/
+.page3{
+	color: #5cb85c;
+}
+.list-skills{ 
+	list-style: none;    
+	padding: 75px 120px 25px;
+}
+.list-skills li .progress {
+    height: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.list-skills li .progress .progress-bar {
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #5cb85c;;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    transition: width .6s ease;
+}
+.card-left-2{ padding-top: 40px; }
+
+/*page4我的作品*/
+.page4 {
+	color: #34495E;
+}
+
+/*page5*/
+
+.page5{
+	background-color: #414141;
+}

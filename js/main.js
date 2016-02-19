@@ -18,8 +18,8 @@
             tooltipBox.style.display = "block";
 
             //提示框位置
-            var left = obj.offsetLeft-180;
-            var top = obj.offsetTop-120;
+            var left = obj.offsetLeft-170;
+            var top = obj.offsetTop-100;
             
             tooltipBox.style.left = left + 'px';
             tooltipBox.style.top = top + 'px';
@@ -42,6 +42,6 @@
 
     //鼠标指针进入触发
     t.onmouseenter = function () {
-        var _html = '<p>扫一扫加我微信</p><img src="images/WeChat.png" />';
+        var _html = '<img src="images/WeChat.png" />';
         showTooltip(this, "t", _html);
     };

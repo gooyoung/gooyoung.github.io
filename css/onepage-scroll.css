@@ -15,7 +15,7 @@ body, .onepage-wrapper, html {
 }
 
 .page1 { background:url("../images/mainbanner_bg.png") repeat 0 0;}
-.page2,.page3,.page4,.page5 { background-color: #303030;}
+.page2,.page3,.page4,.page5 { background-color: #FAFAFA;}
 
 .onepage-wrapper {
   width: 100%;
@@ -25,12 +25,10 @@ body, .onepage-wrapper, html {
   padding: 0;
   -webkit-transform-style: preserve-3d;
 }
-
-.onepage-wrapper .section {
-  width: 100%;
+section{
   height: 100%;
+  width: 100%;
 }
-
 .onepage-pagination {
   position: absolute;
   right: 10px;
