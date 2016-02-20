@@ -11,29 +11,42 @@
 .logo1{
 	color: #939393;
 	font-family: "icomoon";
-	font-size: 1.2rem;
-	padding: 12px;
+	font-size: 1.7rem;
+	padding: 10px;
+	margin-right:15px; 
 	background-color: #141414;
 	border-radius: 100%;
 	border: 1.5px solid #333;
 	box-shadow: 3px 3px 3px rgba(0,0,0,.4) inset;
+
 }
 .logo1:hover{
 	color:#fff;
 	background-color: #000;
 }
 .logo2{
-	color: #fff;
 	font-family: "icomoon";
+	color: #fff;
 	font-size: 1.9rem;
 	margin-right: 15px;
 	margin-top: 5px;
 }
+.logo3{
+	font-family: "icomoon";
+	color: #939393;
+	font-size: 5rem;
+	margin-bottom: 40px;
+	display: block;
+}
+.logo4{
+	font-family: "icomoon";
+	color:#34495E;
 
+}
 /*main*/
 
 body{ 
-	font:1.25rem/1.5 'Helvetica Neue',Arial,'Hiragino Sans GB',STHeiti,'STHeiti Light [STXihei]','Microsoft Yahei',sans-serif;
+	font:1.2rem/1.5 'Helvetica Neue',Arial,'Hiragino Sans GB',STHeiti,'STHeiti Light [STXihei]','Microsoft Yahei',sans-serif;
 	color:#fff;
 }
 html,body,div{ margin:0;padding:0;}
@@ -42,10 +55,13 @@ h1,h2,h3,h4,p{
     margin:10px 0;
     padding:0;
 }
-a {text-decoration: none;}
+a {
+	text-decoration: none;
+
+}
 h1{font-size: 2.5rem;}
 .center { text-align: center; }
-.page { display: table; }
+.page { display: table;min-width: 1140px;min-height: 500px;}
 .warp { display: table-cell;vertical-align: middle;width: 100%;height: 100%; }
 .box{
 	width: 80%;
@@ -54,9 +70,8 @@ h1{font-size: 2.5rem;}
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 2px 4px rgba(0,0,0,.4);
-
 }
-.card { float: left; 	display: table;}
+.card { float: left;display: table;}
 .card .mid{display: table-cell;vertical-align: middle;}
 .card:hover{
 	box-shadow:0 0 38px rgba(0,0,0,.08) inset;
@@ -66,9 +81,11 @@ h1{font-size: 2.5rem;}
 .card-right-1{width: 40%; height: 100%;}
 .card-left-2{width: 40%; height: 100%;}
 .card-right-2{width: 60%; height: 100%;}
-.card-left-3{width: 30%; height: 100%;}
-.card-center-3{width: 40%; height: 100%;}
-.card-right-3{width: 30%; height: 100%;}
+.card-left-3{width: 40%; height: 100%;}
+.card-right-3{width: 60%; height: 100%;}
+.card-top{width: 100%; height: 50%;}
+.card-bottom{width: 100%; height: 50%;}
+
 /*page1*/
 /*.header-warp{
 	background:url(../images/mainbanner_content.png) no-repeat;
@@ -106,21 +123,31 @@ h1{font-size: 2.5rem;}
 .tooltip-box img {
 	padding-top: 20px;
     width: 110px;
-    height: 110px;
 }
 
 
-
-
-
 /*page2 关于我*/
-.page2 { color: #414141; }
-
-
+.page2 {
+	color: #414141;
+}
+.card-left-1 ul{
+	list-style: none;
+}
 
 /*page3我的技能*/
 .page3{
 	color: #5cb85c;
+}
+.tag-pane{
+	margin-top: 10px;
+}
+.tag{
+	padding: 10px;
+	display: inline-block;
+	background-color:  #5cb85c;
+	color:#fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.4);
 }
 .list-skills{ 
 	list-style: none;    
@@ -151,7 +178,14 @@ h1{font-size: 2.5rem;}
 .page4 {
 	color: #34495E;
 }
-
+.card .mid a{
+	background-color: #34495E;
+	color: #fff;
+	padding: 5px 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	margin: o auto;
+}
 /*page5*/
 
 .page5{
