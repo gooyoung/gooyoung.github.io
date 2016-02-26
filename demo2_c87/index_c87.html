@@ -5,10 +5,7 @@
 	<title>C-87产品轮播图</title>
 	<style type="text/css">
 		*{padding: 0;margin: 0;list-style: none;}
-		body{
-			background-color: #E5E5E5
-		}
-		
+		body{background-color: #E5E5E5}
 		.box{
 			width: 1124px;
 			height: 576px;
@@ -29,10 +26,7 @@
 			position: absolute; top: 0;left: o;
 			display:none; 
 		}
-		.tu li a img{
-			width: 1124px;
-			height: 576px; 
-		}
+		.tu li a img{width: 1124px;height: 576px;}
 		.shu{
 			position: absolute;
 			bottom:10px;left:0; 
@@ -54,58 +48,71 @@
 			cursor:pointer;
 
 		}
-		.shu li.active{
-			background: #a00;
+		.shu li.active{background: #a00;}
+		.slider a {
+			text-decoration: none;
+    		position: absolute;
+    		top: 50%;
+    		display: block;
+    		width: 48px;
+    		height: 62px;
+    		line-height: 62px;
+    		background: rgba(0,0,0,.2);
+    		color: #fff;
+    		text-align: center;
+    		font-size: 32px;
 		}
-
+		.slider a:hover{background-color: rgba(0,0,0,.7);}
+		.slider-next{right: 0;}
 	</style>
 </head>
 
 <body>
-
-<div class="box">
-	<div id="logo">
-		<a href="index.html"><img src="image_c87/logo.png"></a>
+	<div class="box">
+		<div id="logo">
+			<a href="index.html"><img src="image_c87/logo.png"></a>
+		</div>
+		<ul class="tu">
+			<li>
+				<a href="#"><img src="image_c87/c87_1.jpg" /></a>
+			</li>
+			<li>
+				<a href="#"><img src="image_c87/c87_2.jpg" /></a>
+			</li>
+			<li>
+				<a href="#"><img src="image_c87/c87_3.jpg" /></a>
+			</li>
+			<li>
+				<a href="#"><img src="image_c87/c87_4.jpg" /></a>
+			</li>
+			<li>
+				<a href="#"><img src="image_c87/c87_5.jpg" /></a>
+			</li>
+			<li>
+				<a href="#"><img src="image_c87/c87_6.jpg" /></a>
+			</li>
+			<li>
+				<a href="#"><img src="image_c87/c87_7.jpg" /></a>
+			</li>
+			<li>
+				<a href="#"><img src="image_c87/c87_8.jpg" /></a>
+			</li>
+		</ul>
+		<ul class="shu">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="slider">
+			<a href="javascript:;" class="slider-prev">&lt;</a>
+			<a href="javascript:;" class="slider-next">&gt;</a>
+		</div>
 	</div>
-	<ul class="tu">
-		<li>
-			<a href="#"><img src="image_c87/c87_1.jpg" /></a>
-		</li>
-		<li>
-			<a href="#"><img src="image_c87/c87_2.jpg" /></a>
-		</li>
-		<li>
-			<a href="#"><img src="image_c87/c87_3.jpg" /></a>
-		</li>
-		<li>
-			<a href="#"><img src="image_c87/c87_4.jpg" /></a>
-		</li>
-		<li>
-			<a href="#"><img src="image_c87/c87_5.jpg" /></a>
-		</li>
-		<li>
-			<a href="#"><img src="image_c87/c87_6.jpg" /></a>
-		</li>
-		<li>
-			<a href="#"><img src="image_c87/c87_7.jpg" /></a>
-		</li>
-		<li>
-			<a href="#"><img src="image_c87/c87_8.jpg" /></a>
-		</li>
-	</ul>
-	<ul class="shu">
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-	<a href="javascript:;" id="left">&lt;</a>
-    <a href="javascript:;" id="right">&gt;</a> 
-</div>
 	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 	<script>
 		$(function(){
