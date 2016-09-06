@@ -1,4 +1,4 @@
-何知庆的个人博客
+个人博客
 ================
 Powered by [hexo](http://hexo.io/)
 
